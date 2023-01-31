@@ -1,12 +1,23 @@
 import React from 'react';
 import { FiSearch } from 'react-icons/fi';
-import { Text, Heading, Box, Flex, Image, Icon } from '@chakra-ui/react';
+import {
+	Text,
+	Heading,
+	Box,
+	Flex,
+	Image,
+	Icon,
+	Button,
+	Link,
+} from '@chakra-ui/react';
 import HoverMenu from './HoverMenu';
 import Drawer from './Drawer';
 import Carousel from './Carousel';
+import Carousel2 from './Carousel2';
+import { RxDividerHorizontal, RxDividerVertical } from 'react-icons/rx';
 
 const Landingpage = () => {
-	const carousel2 = [
+	const carousel = [
 		{
 			img: '/images/1a.png',
 			subtext: 'intibiome wellness daily intimate wash',
@@ -24,6 +35,20 @@ const Landingpage = () => {
 			subtext: 'intibiome agecare dryness relief intimate wash',
 			bottom: 'agecare',
 			color: '#EE6381',
+		},
+	];
+	const carousel2 = [
+		{
+			img: '/images/2a.png',
+			subtext: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		},
+		{
+			img: '/images/2b.png',
+			subtext: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+		},
+		{
+			img: '/images/2c.png',
+			subtext: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 		},
 	];
 	return (
@@ -131,7 +156,7 @@ const Landingpage = () => {
 			</Heading>
 			<Box display={{ base: 'none', md: 'block' }}>
 				<Flex justifyContent="center">
-					{carousel2.map((el: any, index) => (
+					{carousel.map((el: any, index) => (
 						<div key={index} className="item">
 							<Box w="356px" rounded="md" boxShadow="lg">
 								<img className="innerImg" src={el.img} />
@@ -159,18 +184,20 @@ const Landingpage = () => {
 				</Flex>
 			</Box>
 			<Box display={{ base: 'block', md: 'none' }}>
-				<Carousel images={carousel2} />
+				<Carousel images={carousel} />
 			</Box>
-			<Image
-				mx="auto"
-				display={{ base: 'none', md: 'block' }}
-				src={'/images/asset.png'}
-			/>
-			<Image
-				mx="auto"
-				display={{ base: 'block', md: 'none' }}
-				src={'/images/bannerAnti.png'}
-			/>
+			<Box m="120px 0px">
+				<Image
+					mx="auto"
+					display={{ base: 'none', md: 'block' }}
+					src={'/images/asset.png'}
+				/>
+				<Image
+					mx="auto"
+					display={{ base: 'block', md: 'none' }}
+					src={'/images/bannerAnti.png'}
+				/>
+			</Box>
 			<Box>
 				<Heading
 					fontSize="39px"
@@ -180,6 +207,123 @@ const Landingpage = () => {
 				>
 					keep up to date with our discoveries
 				</Heading>
+				<Box display={{ base: 'block', md: 'none' }}>
+					<Carousel2 images={carousel2} />
+				</Box>
+				<Box display={{ base: 'none', md: 'block' }}>
+					<Flex justifyContent="center">
+						{carousel2.map((el: any) => (
+							<div key={el} className="item">
+								<Box w="356px" rounded="md" boxShadow="lg">
+									<Image h="232px" className="innerImg" src={el.img} />
+									<Box>
+										<Text fontSize="20px" p="16px">
+											{el.subtext}
+										</Text>
+									</Box>
+								</Box>
+							</div>
+						))}
+					</Flex>
+				</Box>
+				<Flex
+					m={{ base: '40px 80px', md: '85px 120px' }}
+					justifyContent="center"
+				>
+					<Button w={{ base: '392px', md: '356px' }} colorScheme="blue">
+						see more
+					</Button>
+				</Flex>
+			</Box>
+			<Box backgroundColor="#389CD6" w="100%">
+				<Flex
+					p="76px 90px"
+					mx="auto"
+					justifyContent="space-between"
+					w={{ base: '100%', md: '800px' }}
+					flexDir={{ base: 'column', md: 'row' }}
+					alignItems="center"
+				>
+					<Link color="white">contact us</Link>
+					<Icon
+						color="white"
+						display={{ base: 'none', md: 'flex' }}
+						as={RxDividerVertical}
+					/>
+					<Icon
+						color="white"
+						display={{ base: 'flex', md: 'none' }}
+						as={RxDividerHorizontal}
+					/>
+					<Link color="white">faq</Link>
+					<Icon
+						color="white"
+						display={{ base: 'flex', md: 'none' }}
+						as={RxDividerHorizontal}
+					/>
+					<Icon
+						color="white"
+						display={{ base: 'none', md: 'flex' }}
+						as={RxDividerVertical}
+					/>
+					<Link color="white">site map</Link>
+					<Icon
+						color="white"
+						display={{ base: 'none', md: 'flex' }}
+						as={RxDividerVertical}
+					/>
+					<Icon
+						color="white"
+						display={{ base: 'flex', md: 'none' }}
+						as={RxDividerHorizontal}
+					/>
+					<Link color="white">privacy policy</Link>
+					<Icon
+						color="white"
+						display={{ base: 'none', md: 'flex' }}
+						as={RxDividerVertical}
+					/>
+					<Icon
+						color="white"
+						display={{ base: 'flex', md: 'none' }}
+						as={RxDividerHorizontal}
+					/>
+					<Link color="white">cookies policy</Link>
+					<Icon
+						color="white"
+						display={{ base: 'none', md: 'flex' }}
+						as={RxDividerVertical}
+					/>
+					<Icon
+						color="white"
+						display={{ base: 'flex', md: 'none' }}
+						as={RxDividerHorizontal}
+					/>
+					<Link color="white">legal notice</Link>
+				</Flex>
+				<Flex
+					justifyContent={{ base: 'center', md: 'space-between' }}
+					flexDir={{ base: 'column', md: 'row' }}
+					w={{ base: '90%', md: '1000px' }}
+					alignContent="center"
+					mx="auto"
+					p="64px 90px"
+				>
+					<Image mb='100px'
+						mx="auto"
+						src="/images/logo.png"
+						w="116px"
+						h="29px"
+						alt="logo u-labs"
+					/>
+					<Image
+						mx="auto"
+						src="/images/insta.png"
+						w="42px"
+						h="42px"
+						alt="logo instagram"
+					/>
+				</Flex>
 			</Box>
 		</>
 	);
