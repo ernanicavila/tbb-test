@@ -15,6 +15,7 @@ import Drawer from './Drawer';
 import Carousel from './Carousel';
 import Carousel2 from './Carousel2';
 import { RxDividerHorizontal, RxDividerVertical } from 'react-icons/rx';
+import Head from 'next/head';
 
 const Landingpage = () => {
 	const carousel = [
@@ -52,7 +53,14 @@ const Landingpage = () => {
 		},
 	];
 	return (
-		<>
+		<Box>
+			<Head>
+				<meta
+					name="description"
+					content="website asked in a application test for The Broklyn Brothers application"
+				/>
+				<title>Antibiome - The Broklyn Brothers</title>
+			</Head>
 			<Box>
 				<Flex
 					p={{ base: '25px 30px', md: 'none' }}
@@ -69,6 +77,7 @@ const Landingpage = () => {
 						w={{ base: '143px', md: '195px' }}
 						h={{ base: '58px', md: '79px' }}
 						src="/images/headerLogo.png"
+						alt="logo antibiome"
 					/>
 					<Icon
 						mr={{ base: '5px', md: '-420px' }}
@@ -80,13 +89,19 @@ const Landingpage = () => {
 				<HoverMenu />
 				<Image
 					display={{ base: 'none', md: 'block' }}
+					w="100%"
+					h="100%"
 					mx="auto"
 					src="/images/banner.png"
+					alt="banner antibiome"
 				/>
 				<Image
 					display={{ base: 'block', md: 'none' }}
 					mx="auto"
+					w="100%"
+					h="100%"
 					src="/images/banner2.png"
+					alt="banner antibiome"
 				/>
 			</Box>
 
@@ -103,6 +118,7 @@ const Landingpage = () => {
 				>
 					we're here to help
 				</Heading>
+
 				<Text
 					fontSize={{ base: '16px', md: '20px' }}
 					mt="40px"
@@ -125,7 +141,13 @@ const Landingpage = () => {
 				</Text>
 			</Box>
 
-			<Image mx="auto" src="/images/icons.png" />
+			<Image
+				mx="auto"
+				w="100%"
+				h="100%"
+				src="/images/icons.png"
+				alt="icons promote preserve protect"
+			/>
 
 			<Box
 				p="8px"
@@ -156,10 +178,16 @@ const Landingpage = () => {
 			</Heading>
 			<Box display={{ base: 'none', md: 'block' }}>
 				<Flex justifyContent="center">
-					{carousel.map((el: any, index) => (
-						<div key={index} className="item">
+					{carousel.map((el: any, index: any) => (
+						<div key={`${index}${el.subtext}`} className="item">
 							<Box w="356px" rounded="md" boxShadow="lg">
-								<img className="innerImg" src={el.img} />
+								<Image
+									w="100%"
+									className="innerImg"
+									src={el.img}
+									h="100%"
+									alt={`logo ${el.subtext}`}
+								/>
 								<Box>
 									<Text fontSize="20px" m="32px 24px">
 										{el.subtext}
@@ -189,13 +217,19 @@ const Landingpage = () => {
 			<Box m="120px 0px">
 				<Image
 					mx="auto"
+					w="100%"
+					h="100%"
 					display={{ base: 'none', md: 'block' }}
 					src={'/images/asset.png'}
+					alt="banner antiome"
 				/>
 				<Image
+					w="100%"
 					mx="auto"
+					h="100%"
 					display={{ base: 'block', md: 'none' }}
 					src={'/images/bannerAnti.png'}
+					alt="banner antiome"
 				/>
 			</Box>
 			<Box>
@@ -212,10 +246,16 @@ const Landingpage = () => {
 				</Box>
 				<Box display={{ base: 'none', md: 'block' }}>
 					<Flex justifyContent="center">
-						{carousel2.map((el: any) => (
-							<div key={el} className="item">
+						{carousel2.map((el: any, index: any) => (
+							<div key={index} className="item">
 								<Box w="356px" rounded="md" boxShadow="lg">
-									<Image h="232px" className="innerImg" src={el.img} />
+									<Image
+										h="232px"
+										w="100%"
+										className="innerImg"
+										src={el.img}
+										alt={`image of ${el.subtext}`}
+									/>
 									<Box>
 										<Text fontSize="20px" p="16px">
 											{el.subtext}
@@ -244,7 +284,9 @@ const Landingpage = () => {
 					flexDir={{ base: 'column', md: 'row' }}
 					alignItems="center"
 				>
-					<Link color="white">contact us</Link>
+					<Link color="white" href="#">
+						contact us
+					</Link>
 					<Icon
 						color="white"
 						display={{ base: 'none', md: 'flex' }}
@@ -255,7 +297,9 @@ const Landingpage = () => {
 						display={{ base: 'flex', md: 'none' }}
 						as={RxDividerHorizontal}
 					/>
-					<Link color="white">faq</Link>
+					<Link color="white" href="#">
+						faq
+					</Link>
 					<Icon
 						color="white"
 						display={{ base: 'flex', md: 'none' }}
@@ -266,7 +310,9 @@ const Landingpage = () => {
 						display={{ base: 'none', md: 'flex' }}
 						as={RxDividerVertical}
 					/>
-					<Link color="white">site map</Link>
+					<Link color="white" href="#">
+						site map
+					</Link>
 					<Icon
 						color="white"
 						display={{ base: 'none', md: 'flex' }}
@@ -277,7 +323,9 @@ const Landingpage = () => {
 						display={{ base: 'flex', md: 'none' }}
 						as={RxDividerHorizontal}
 					/>
-					<Link color="white">privacy policy</Link>
+					<Link color="white" href="#">
+						privacy policy
+					</Link>
 					<Icon
 						color="white"
 						display={{ base: 'none', md: 'flex' }}
@@ -288,7 +336,9 @@ const Landingpage = () => {
 						display={{ base: 'flex', md: 'none' }}
 						as={RxDividerHorizontal}
 					/>
-					<Link color="white">cookies policy</Link>
+					<Link color="white" href="#">
+						cookies policy
+					</Link>
 					<Icon
 						color="white"
 						display={{ base: 'none', md: 'flex' }}
@@ -299,17 +349,20 @@ const Landingpage = () => {
 						display={{ base: 'flex', md: 'none' }}
 						as={RxDividerHorizontal}
 					/>
-					<Link color="white">legal notice</Link>
+					<Link color="white" href="#">
+						legal notice
+					</Link>
 				</Flex>
 				<Flex
 					justifyContent={{ base: 'center', md: 'space-between' }}
 					flexDir={{ base: 'column', md: 'row' }}
-					w={{ base: '90%', md: '1000px' }}
+					w={{ base: '90%', md: '1200px' }}
 					alignContent="center"
 					mx="auto"
 					p="64px 90px"
 				>
-					<Image mb='100px'
+					<Image
+						mb="100px"
 						mx="auto"
 						src="/images/logo.png"
 						w="116px"
@@ -325,7 +378,7 @@ const Landingpage = () => {
 					/>
 				</Flex>
 			</Box>
-		</>
+		</Box>
 	);
 };
 

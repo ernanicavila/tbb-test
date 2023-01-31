@@ -1,39 +1,35 @@
 .outCarousel {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  justify-content: center;
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+	justify-content: center;
 }
 
 .inner {
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
+	display: flex;
+	margin: 0 auto;
+	justify-content: center;
 }
 
 .item {
-  min-height: 200px;
-  min-width: 450px;
-  padding: 14px;
+	min-height: 200px;
+	min-width: 450px;
+	padding: 14px;
 }
 
 .innerImg {
-  width: 356px;
-  height: 351px;
-  pointer-events: none;
+	width: 356px;
+	height: 351px;
+	pointer-events: none;
 }
 
-
-
-
-
 @media screen and (max-width: 768px) {
-  .outCarousel {
-    width: 100%;
-    max-width: 400px;
-  }
-  .carousel {
-    cursor: grab;
-    overflow: hidden;    
-  }
+	.outCarousel {
+		width: 100%;
+		max-width: 400px;
+	}
+	.carousel {
+		cursor: grab;
+		overflow: hidden;
+	}
 }

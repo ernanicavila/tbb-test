@@ -11,10 +11,10 @@ const Carousel = ({ images }) => {
 					drag="x"
 					dragConstraints={{ right: 400, left: -400 }}
 				>
-					{images.map((el: any) => (
-						<motion.div key={el} className="item">
+					{images.map((el: any, index: any) => (
+						<motion.div key={index} className="item">
 							<Box w="356px" rounded="md" boxShadow="lg">
-								<Image className="innerImg" src={el.img} />
+								<Image className="innerImg" src={el.img} w="100%" h="100%" alt={`logo ${el.bottom}`} />
 								<Box>
 									<Text fontSize="20px" m="32px 24px">
 										{el.subtext}
