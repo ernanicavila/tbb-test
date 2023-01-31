@@ -47,14 +47,12 @@ const HoverMenu = () => {
 							</Flex>
 						</MenuButton>
 						<MenuList
-							w="1920px"
-							mr="600px"
 							display="flex"
 							onMouseEnter={onOpenAbout}
 							onMouseLeave={onCloseAbout}
 							backgroundColor="#9D8E8E"
 						>
-							<Flex w="450px" justifyContent="space-around" ml="414px">
+							<Flex w="450px" justifyContent="space-around">
 								<Text color="white">brand philosophy</Text>
 								<Text color="white">product technology</Text>
 							</Flex>
@@ -71,14 +69,14 @@ const HoverMenu = () => {
 							</Flex>
 						</MenuButton>
 						<MenuList
-							w="1920px"
-							mr="600px"
 							display="flex"
 							onMouseEnter={onOpenProducts}
 							onMouseLeave={onCloseProducts}
 							backgroundColor="#9D8E8E"
 						>
-							<Flex w="650px" justifyContent="space-around" ml="414px">
+							<Flex 
+							w="650px"
+							 justifyContent="space-around">
 								<Text color="white">all products</Text>
 								<Text color="white">intibiome wellness</Text>
 								<Text color="white">intibiome active</Text>
@@ -97,14 +95,12 @@ const HoverMenu = () => {
 							</Flex>
 						</MenuButton>
 						<MenuList
-							w="1920px"
-							mr="600px"
 							display="flex"
 							onMouseEnter={onOpenHealth}
 							onMouseLeave={onCloseHealth}
 							backgroundColor="#9D8E8E"
 						>
-							<Flex w="450px" justifyContent="space-around" ml="414px">
+							<Flex w="450px" justifyContent="space-around" >
 								<Text color="white">article 1</Text>
 								<Text color="white">article 2</Text>
 								<Text color="white">article 3</Text>

@@ -27,13 +27,14 @@ const Landingpage = () => {
 		},
 	];
 	return (
-		<Box border="1px solid black">
+		<>
 			<Box>
 				<Flex
 					p={{ base: '25px 30px', md: 'none' }}
 					justifyContent={{ base: 'space-between', md: 'center' }}
 					h={{ base: '70px', md: '80px' }}
 					w="100%"
+					maxWidth="1980px"
 					alignItems="center"
 				>
 					<Drawer />
@@ -180,7 +181,7 @@ const Landingpage = () => {
 					keep up to date with our discoveries
 				</Heading>
 			</Box>
-		</Box>
+		</>
 	);
 };
 
