@@ -69,6 +69,7 @@ const Landingpage = () => {
 					w="100%"
 					maxWidth="1980px"
 					alignItems="center"
+					mx='auto'
 				>
 					<Drawer />
 					<Image
