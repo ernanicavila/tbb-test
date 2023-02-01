@@ -90,7 +90,7 @@ const Landingpage = () => {
 				<Image
 					display={{ base: 'none', md: 'block' }}
 					w="100%"
-					h="100%"
+					h="550px"
 					mx="auto"
 					src="/images/banner.png"
 					alt="banner antibiome"
