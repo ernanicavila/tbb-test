@@ -1,8 +1,7 @@
 
 # The Broklyn Brothers Test.
 
-Esse é um teste tecnico para a empresa The Broklyn Brothers.
-A ideia do mesmo era criar um frontend responsivo e que tivesse dois sliders em sua utilização 
+Esse é um teste tecnico para a empresa The Broklyn Brothers. A ideia do projeto é criar um frontend responsivo seguindo o design pronto pelo Adobe XD.
 
 
 
@@ -14,6 +13,13 @@ http://www.teste-chi-seven.vercel.app
 
 Caso queira instalar o projeto localmente use os comandos:
 
+Clone o projeto
+
+```bash
+  git clone git@github.com:ernanicavila/tbb-test.git
+```
+Instale com:
+
 ```bash
   npm install
 ```
@@ -23,12 +29,6 @@ ou
 ```
 
 ## Executar localmente
-
-Clone o projeto
-
-```bash
-  git clone git@gitclone...
-```
 
 Va até a pasta do projeto
 
@@ -48,7 +48,7 @@ ou
 Inicie o server
 
 ```bash
-  npm run start
+  npm run dev
 ```
 ou
 
@@ -66,7 +66,6 @@ ou
 ```
 
 Abra o http://localhost:3000 (supondo que a mesma está fora de uso) no seu browser para visualizar o projeto.
-
 ## Tecnologias Utilizadas
 
 **Client:** NextJs(React), ChakraUI, Framer-Motion.
