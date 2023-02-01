@@ -1,38 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# The Broklyn Brothers Test.
 
-First, run the development server:
+Esse é um teste tecnico para a empresa The Broklyn Brothers.
+A ideia do mesmo era criar um frontend responsivo e que tivesse dois sliders em sua utilização 
+
+
+
+## Instalação
+
+O projeto já foi colocado no ar na Vercel através do link:
+
+http://www.teste-chi-seven.vercel.app
+
+Caso queira instalar o projeto localmente use os comandos:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+  npm install
+```
+ou
+```bash
+  yarn
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Executar localmente
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Clone the project
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```bash
+  git clone git@gitclone...
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Va até a pasta do projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+  cd tbb-test
+```
 
-## Learn More
+Instale as dependencias
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+  npm install
+```
+ou
+```bash
+  yarn
+```
+Inicie o server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+  npm run start
+```
+ou
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+  yarn dev
+```
+## Deploy
 
-## Deploy on Vercel
+```bash
+  npm run dev
+```
+ou
+```bash
+  yarn dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Abra o http://localhost:3000 (supondo que a mesma está fora de uso) no seu browser para visualizar o projeto.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Tecnologias Utilizadas
+
+**Client:** NextJs(React), ChakraUI, Framer-Motion.
+
+**Deploy:** Vercel
