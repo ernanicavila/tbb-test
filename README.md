@@ -24,7 +24,7 @@ ou
 
 ## Executar localmente
 
-Clone the project
+Clone o projeto
 
 ```bash
   git clone git@gitclone...
