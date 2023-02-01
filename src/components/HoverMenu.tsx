@@ -8,9 +8,7 @@ import {
 	Menu,
 	MenuButton,
 	MenuList,
-	MenuItem,
 } from '@chakra-ui/react';
-import { FiSearch } from 'react-icons/fi';
 
 const HoverMenu = () => {
 	const {

@@ -3,11 +3,9 @@ import {
 	Box,
 	Drawer,
 	DrawerBody,
-	DrawerFooter,
 	DrawerContent,
 	useDisclosure,
 	Icon,
-	Text,
 	Heading,
 } from '@chakra-ui/react';
 import { FiMenu, FiX } from 'react-icons/fi';
@@ -35,7 +33,7 @@ const SizeExample = () => {
 				<DrawerContent bgColor="#389CD6" mt="70px">
 					<DrawerBody m="55px 40px">
 						{menu.map((el) => (
-							<Heading mb="40px" color="white" fontSize="16px">
+							<Heading key={el} mb="40px" color="white" fontSize="16px">
 								{el}
 							</Heading>
 						))}

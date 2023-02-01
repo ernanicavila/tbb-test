@@ -10,11 +10,11 @@ import {
 	Button,
 	Link,
 } from '@chakra-ui/react';
+import { RxDividerHorizontal, RxDividerVertical } from 'react-icons/rx';
 import HoverMenu from './HoverMenu';
 import Drawer from './Drawer';
-import Carousel from './Carousel';
-import Carousel2 from './Carousel2';
-import { RxDividerHorizontal, RxDividerVertical } from 'react-icons/rx';
+import Products from './Products';
+import Discoveries from './Discoveries';
 import Head from 'next/head';
 
 const Landingpage = () => {
@@ -116,7 +116,7 @@ const Landingpage = () => {
 					textAlign="center"
 					color="#389CD6"
 				>
-					we're here to help
+					we’re here to help
 				</Heading>
 
 				<Text
@@ -212,7 +212,7 @@ const Landingpage = () => {
 				</Flex>
 			</Box>
 			<Box display={{ base: 'block', md: 'none' }}>
-				<Carousel images={carousel} />
+				<Products images={carousel} />
 			</Box>
 			<Box m="120px 0px">
 				<Image
@@ -242,7 +242,7 @@ const Landingpage = () => {
 					keep up to date with our discoveries
 				</Heading>
 				<Box display={{ base: 'block', md: 'none' }}>
-					<Carousel2 images={carousel2} />
+					<Discoveries images={carousel2} />
 				</Box>
 				<Box display={{ base: 'none', md: 'block' }}>
 					<Flex justifyContent="center">

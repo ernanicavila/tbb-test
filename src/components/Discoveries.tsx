@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Text, Heading, Flex, Box, Image } from '@chakra-ui/react';
+import { Text, Box, Image } from '@chakra-ui/react';
 
-const Carousel = ({ images }) => {
+const Discoveries = ({ images }) => {
 	return (
 		<div className="outCarousel">
 			<motion.div className="carousel" whileTap={{ cursor: 'grabbing' }}>
@@ -35,4 +35,4 @@ const Carousel = ({ images }) => {
 	);
 };
 
-export default Carousel;
+export default Discoveries;
