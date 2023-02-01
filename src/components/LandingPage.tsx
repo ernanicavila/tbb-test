@@ -67,7 +67,6 @@ const Landingpage = () => {
 					justifyContent={{ base: 'space-between', md: 'center' }}
 					h={{ base: '70px', md: '80px' }}
 					w="100%"
-					maxWidth="1980px"
 					alignItems="center"
 					mx='auto'
 				>
