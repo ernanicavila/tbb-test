@@ -21,9 +21,11 @@ body,
 }
 
 .item {
+	border: '1px solid black';
 	min-height: 200px;
 	min-width: 356px;
 	padding: 16px;
+	margin: 0px 16px;
 }
 
 .innerImg {

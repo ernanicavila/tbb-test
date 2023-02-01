@@ -166,12 +166,17 @@ const Landingpage = () => {
 				>
 					whatever your age. whatever your lifestyle. whatever your interests.
 				</Heading>
-				<Text mt="40px" mb="16px" textAlign="center">
+				<Text
+					fontSize={{ base: '16px', md: '20px' }}
+					mt="40px"
+					mb="16px"
+					textAlign="center"
+				>
 					Co-created with gynaecologists, our revolutionary products have been
 					expertly developed to support your intimate microbiome and pH balance,
 					and strengthen overall natural health.
 				</Text>
-				<Text textAlign="center">
+				<Text fontSize={{ base: '16px', md: '20px' }} textAlign="center">
 					As the experts in intimate hygiene, we want to bring discussion about
 					intimate wellness care out of the dark and demystify the taboos that
 					surround it.
@@ -289,7 +294,7 @@ const Landingpage = () => {
 			</Box>
 			<Box backgroundColor="#389CD6" w="100%">
 				<Flex
-					p="76px 90px"
+					p="76px 0px"
 					mx="auto"
 					justifyContent="space-between"
 					w={{ base: '100%', md: '800px' }}
@@ -368,10 +373,9 @@ const Landingpage = () => {
 				<Flex
 					justifyContent={{ base: 'center', md: 'space-between' }}
 					flexDir={{ base: 'column', md: 'row' }}
-					w={{ base: '90%', md: '1200px' }}
+					w={{ base: '90%', md: '1700px' }}
 					alignContent="center"
 					mx="auto"
-					p="64px 90px"
 				>
 					<Image
 						mb="100px"
