@@ -11,9 +11,10 @@ Esse é um teste tecnico para a empresa The Broklyn Brothers. A ideia do projeto
 
 ## Instalação e execução
 
-O projeto já foi colocado no ar na Vercel através do link:
+O projeto já foi colocado no ar na Vercel através do link no "description" do projeto, você também pode acessa-lo clicando <a href="https://teste-chi-seven.vercel.app/" target="_blank">AQUI</a>
 
-https://teste-chi-seven.vercel.app/
+
+
 
 Caso queira instalar e executar o projeto localmente use os comandos:
 
