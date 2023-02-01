@@ -3,7 +3,11 @@
 
 Esse é um teste tecnico para a empresa The Broklyn Brothers. A ideia do projeto é criar um frontend responsivo seguindo o design pronto pelo Adobe XD.
 
+## Tecnologias Utilizadas
 
+**Client:** NextJs(React), ChakraUI, Framer-Motion.
+
+**Deploy:** Vercel
 
 ## Instalação e execução
 
@@ -46,8 +50,3 @@ ou
 
 ### Visualizar
 Abra o http://localhost:3000 (supondo que a mesma está fora de uso) no seu browser para visualizar o projeto.
-## Tecnologias Utilizadas
-
-**Client:** NextJs(React), ChakraUI, Framer-Motion.
-
-**Deploy:** Vercel
