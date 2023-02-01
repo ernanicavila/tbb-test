@@ -143,7 +143,7 @@ const Landingpage = () => {
 
 			<Image
 				mx="auto"
-				w="100%"
+				w={{ base: '100%', md: '1132px' }}
 				h="100%"
 				src="/images/icons.png"
 				alt="icons promote preserve protect"
