@@ -5,38 +5,26 @@ Esse é um teste tecnico para a empresa The Broklyn Brothers. A ideia do projeto
 
 
 
-## Instalação
+## Instalação e execução
 
 O projeto já foi colocado no ar na Vercel através do link:
 
 http://www.teste-chi-seven.vercel.app
 
-Caso queira instalar o projeto localmente use os comandos:
+Caso queira instalar e executar o projeto localmente use os comandos:
 
 Clone o projeto
 
 ```bash
   git clone git@github.com:ernanicavila/tbb-test.git
 ```
-Instale com:
-
-```bash
-  npm install
-```
-ou
-```bash
-  yarn
-```
-
-## Executar localmente
 
 Va até a pasta do projeto
 
 ```bash
   cd tbb-test
 ```
-
-Instale as dependencias
+Instale as dependencias:
 
 ```bash
   npm install
@@ -52,15 +40,6 @@ Inicie o server
 ```
 ou
 
-```bash
-  yarn dev
-```
-## Deploy
-
-```bash
-  npm run dev
-```
-ou
 ```bash
   yarn dev
 ```
