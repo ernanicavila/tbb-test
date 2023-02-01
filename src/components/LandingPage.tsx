@@ -179,7 +179,7 @@ const Landingpage = () => {
 			<Box display={{ base: 'none', md: 'block' }}>
 				<Flex justifyContent="center">
 					{carousel.map((el: any, index: any) => (
-						<div key={`${index}${el.subtext}`} className="item">
+						<Box key={`${index}${el.subtext}`} className="item">
 							<Box w="356px" rounded="md" boxShadow="lg">
 								<Image
 									w="100%"
@@ -207,7 +207,7 @@ const Landingpage = () => {
 									</Flex>
 								</Box>
 							</Box>
-						</div>
+						</Box>
 					))}
 				</Flex>
 			</Box>
