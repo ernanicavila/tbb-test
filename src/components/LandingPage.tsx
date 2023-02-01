@@ -73,7 +73,7 @@ const Landingpage = () => {
 					<Drawer />
 					<Image
 						alignSelf="center"
-						mr={{ base: '5px', md: '420px' }}
+						mr={{ base: '5px', md: '20%' }}
 						w={{ base: '143px', md: '195px' }}
 						h={{ base: '58px', md: '79px' }}
 						src="/images/headerLogo.png"
@@ -373,7 +373,7 @@ const Landingpage = () => {
 				<Flex
 					justifyContent={{ base: 'center', md: 'space-between' }}
 					flexDir={{ base: 'column', md: 'row' }}
-					w={{ base: '90%', md: '1700px' }}
+					// w={{ base: '90%', md: '1700px' }}
 					alignContent="center"
 					mx="auto"
 				>
