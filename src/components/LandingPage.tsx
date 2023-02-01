@@ -115,6 +115,8 @@ const Landingpage = () => {
 					fontSize={{ base: '31px', md: '39px' }}
 					textAlign="center"
 					color="#389CD6"
+					fontWeight="600"
+					letterSpacing="0.78px"
 				>
 					we’re here to help
 				</Heading>
@@ -159,6 +161,8 @@ const Landingpage = () => {
 					fontSize={{ base: '31px', md: '39px' }}
 					textAlign="center"
 					color="#389CD6"
+					fontWeight="600"
+					letterSpacing="0.78px"
 				>
 					whatever your age. whatever your lifestyle. whatever your interests.
 				</Heading>
@@ -173,7 +177,13 @@ const Landingpage = () => {
 					surround it.
 				</Text>
 			</Box>
-			<Heading textAlign="center" m="120px 80px" color="#389CD6">
+			<Heading
+				fontWeight="600"
+				letterSpacing="0.78px"
+				textAlign="center"
+				m="120px 80px"
+				color="#389CD6"
+			>
 				our products
 			</Heading>
 			<Box display={{ base: 'none', md: 'block' }}>
@@ -238,6 +248,8 @@ const Landingpage = () => {
 					textAlign="center"
 					m="120px 80px"
 					color="#389CD6"
+					fontWeight="600"
+					letterSpacing="0.78px"
 				>
 					keep up to date with our discoveries
 				</Heading>
